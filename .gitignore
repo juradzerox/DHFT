@@ -1,0 +1,18 @@
+.DS_Store
+
+# Build outputs
+/build/
+/dist/
+/package_tmp/
+/packages/
+
+# Transfer/runtime state
+*.hcpart
+.dhft-state.json
+.dhft-state.json.tmp
+
+# Local editor and OS files
+.idea/
+.vscode/
+*.swp
+*.tmp
