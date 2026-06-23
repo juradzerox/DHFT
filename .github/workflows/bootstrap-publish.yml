@@ -36,6 +36,8 @@ jobs:
           tar -xzf /tmp/dhft-source.tar.gz -C /tmp/dhft-source
           find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
           cp -R /tmp/dhft-source/. .
+          rm -f .github/workflows/release.yml
+          git checkout -- .github/workflows/bootstrap-publish.yml
 
       - name: Set up Go
         uses: actions/setup-go@v5
